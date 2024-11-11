@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1049744559490",
+    "firebase_url": "https://android-programming-devops-default-rtdb.firebaseio.com",
+    "project_id": "android-programming-devops",
+    "storage_bucket": "android-programming-devops.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049744559490:android:2b32fbb97ef6a9e682d39b",
+        "android_client_info": {
+          "package_name": "com.example.project4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049744559490-9cqs0c8rgie47c7ss7162voprqdasj1f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.project4",
+            "certificate_hash": "7f849d4dcd460000f4c88a0fd672592c616ea485"
+          }
+        },
+        {
+          "client_id": "1049744559490-24suesaeis6jqg2jlsiemoi5h5kc3cd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtI0WHGu04z8tysTupvdYzDMCzEMarFZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049744559490-24suesaeis6jqg2jlsiemoi5h5kc3cd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
