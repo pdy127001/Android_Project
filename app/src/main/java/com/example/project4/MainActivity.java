@@ -1,9 +1,11 @@
 package com.example.project4;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -33,7 +35,7 @@ import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button googleAuth;
+    LinearLayout googleAuth;
     FirebaseAuth auth;
     FirebaseDatabase database;
     GoogleSignInClient mGoogleSignInclient;
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         if(auth.getCurrentUser()!=null){
-            Intent intent=new Intent(MainActivity.this,SecondActivity.class);
+            Intent intent=new Intent(MainActivity.this,LobbyActivity.class);
             startActivity(intent);
             finish();
         }
@@ -89,14 +91,22 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     FirebaseUser user=auth.getCurrentUser();
+
+                    // 기존 데이터에 추가/업데이트
                     HashMap<String,Object> map=new HashMap<>();
                     map.put("id",user.getUid());
                     map.put("name",user.getDisplayName());
-                    map.put("profile",user.getPhotoUrl().toString());
-                    database.getReference().child("users").child(user.getUid()).setValue(map);
-                    Intent intent=new Intent(MainActivity.this,SecondActivity.class);
-                    startActivity(intent);
+                    if (user.getPhotoUrl() != null) {
+                        map.put("profile", user.getPhotoUrl().toString());
+                    }
 
+                    // updateChildren()으로 기존 데이터를 유지하며 새로운 데이터 추가
+                    database.getReference().child("users").child(user.getUid()).updateChildren(map);
+
+                    // 다음 화면으로 이동
+                    Intent intent=new Intent(MainActivity.this,LobbyActivity.class);
+                    startActivity(intent);
+                    finish();
                 }
                 else{
                     Toast.makeText(MainActivity.this,"몰루",Toast.LENGTH_SHORT).show();
