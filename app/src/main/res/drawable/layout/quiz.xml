@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/quiz_background">
+
+    <!-- 상단 60초 타이머 -->
+
+    <!-- 점수 표시 -->
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="232dp"
+        android:gravity="top"
+        android:text="60"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"/>
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게임 시작"
+        android:layout_gravity="center" />
+
+    <!-- 9초 타이머 (아래에 위치) -->
+    <ProgressBar
+        android:id="@+id/questionTimerBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="9"
+        android:progress="9"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+    <!-- 퀴즈 질문 표시 -->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문제 텍스트"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- 정답 버튼들 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <Button android:id="@+id/answerButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="정답1" />
+        <Button android:id="@+id/answerButton2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="정답2" />
+        <Button android:id="@+id/answerButton3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="정답3" />
+        <Button android:id="@+id/answerButton4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="정답4" />
+    </LinearLayout>
+
+</LinearLayout>

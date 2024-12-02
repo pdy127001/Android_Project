@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <!-- 테두리를 위한 LinearLayout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <!-- 내부 버튼 모음 레이아웃 -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@android:color/white"> <!-- 내부 배경 -->
+
+        <!-- 첫 번째 버튼 -->
+        <Button
+            android:id="@+id/Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카트담기 게임"
+            android:backgroundTint="#ff3333"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 두 번째 버튼 -->
+        <Button
+            android:id="@+id/English_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영어퀴즈 게임"
+            android:backgroundTint="#ff5522"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 세 번째 버튼 -->
+        <Button
+            android:id="@+id/Math_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffaa00"
+            android:text="간단한 연산 게임"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 네 번째 버튼 -->
+        <Button
+            android:id="@+id/Quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#33ee33"
+            android:text="상식퀴즈 게임"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 다섯 번째 버튼 -->
+        <Button
+            android:id="@+id/TTS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3333ff"
+            android:text="받아쓰기 게임"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 여섯 번째 버튼 -->
+        <Button
+            android:id="@+id/Card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카드 맞추기 게임" />
+
+    </LinearLayout>
+</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

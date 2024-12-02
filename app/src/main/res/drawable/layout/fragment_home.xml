@@ -1,0 +1,135 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@drawable/myhome"
+    android:layout_marginBottom="60dp">
+
+    <!-- 사용자 정보 섹션 -->
+    <LinearLayout
+        android:id="@+id/userInfoLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일: user@example.com"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름: 홍길동"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- 점수 섹션 -->
+    <LinearLayout
+        android:id="@+id/scoresLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/userInfoLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/textViewScoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게임 점수"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewScore1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="간단한 연산 게임: 1"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textViewScore2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="받아쓰기 게임: 1"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textViewScore3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상식 퀴즈 게임: 1"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textViewScore4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영어 단어 게임: 1"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textViewScore5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카드 뒤집기 게임: 1"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textViewScore6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카트 담기 게임: 1"
+            android:textSize="16sp"
+            android:textColor="#555555" />
+    </LinearLayout>
+
+    <!-- 로그아웃 버튼 -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#3367D6"
+        android:text="로그아웃"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

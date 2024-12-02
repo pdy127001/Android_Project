@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment"
+    android:background="@drawable/record">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginBottom="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Score 1 -->
+            <TextView
+                android:id="@+id/score1Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="간단한 연산 게임: Top 10"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:background="#333333"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/score1RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#333333"
+                />
+
+            <!-- Score 2 -->
+            <TextView
+                android:id="@+id/score2Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="받아쓰기 게임: Top 10"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:background="#333333"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/score2RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#333333"/>
+
+            <!-- Score 3 -->
+            <TextView
+                android:id="@+id/score3Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상식 퀴즈 게임: Top 10"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:background="#333333"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/score3RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#333333" />
+
+            <!-- Score 4 -->
+            <TextView
+                android:id="@+id/score4Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="영어 단어 게임: Top 10"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:background="#333333"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/score4RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#333333"
+                />
+
+            <!-- Score 5 -->
+            <TextView
+                android:id="@+id/score5Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카드 뒤집기 게임: Top 10"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:background="#333333"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/score5RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#333333"
+                />
+
+            <!-- Score 6 -->
+            <TextView
+                android:id="@+id/score6Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카트 담기 게임: Top 10"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:background="#333333"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/score6RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#333333"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
