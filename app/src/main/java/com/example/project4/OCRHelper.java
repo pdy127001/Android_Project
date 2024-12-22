@@ -15,7 +15,7 @@ public class OCRHelper {
     private static final String TAG = "OCRHelper"; // 로그 태그 추가
     private static final String TESSDATA_SUBFOLDER = "tessdata";
     private static final String LANGUAGE = "eng";  // digits1.traineddata 사용
-
+//OCR Helper
     public OCRHelper(Context context) {
         try {
             tessBaseAPI = new TessBaseAPI();

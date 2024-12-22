@@ -15,7 +15,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MathQuizActivity extends AppCompatActivity {
-
+// 간단한 연산게임
     private Button btnSubmitAnswer, btnClear;
     private LinearLayout gameLayout;
     private TextView tvQuestion, tvScore, tvTimer;

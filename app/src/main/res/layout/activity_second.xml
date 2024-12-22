@@ -32,7 +32,7 @@
         android:hint="Enter a number"
         android:inputType="number"
         android:layout_marginTop="16dp" />
-
+<!--버튼-->
     <Button
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
@@ -54,6 +54,8 @@
         android:layout_height="wrap_content"
         android:text="Show Top 10 Scores"
         android:layout_marginTop="16dp" />
+
+<!--텍스트뷰-->
 
     <TextView
         android:id="@+id/top10ScoresTextView"
